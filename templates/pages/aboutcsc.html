@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSCREDHILLS</title>
+    <link rel="icon" type="image/x-icon" href="../static/images/logo (1).ico">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .about-header {
+            background: url('../../static/images/1595904.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .team-member img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        .about-section {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+        }
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .about-content h1 {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: #343a40;
+        }
+        .about-content p {
+            font-size: 1.2rem;
+            color: #495057;
+            line-height: 1.6;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    {% include 'header/header.html' %}
+    <!-- Header Section -->
+    <header class="about-header">
+        <div class="container">
+            <h1>About Csc Redhills</h1>
+            <p>Learn more about our mission, vision, and the amazing team that makes it all happen.</p>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h1> CSC</h1>
+                <p>Computer Education at affordable cost. <span class="highlight">CSC</span> is the one and only institute in the IT training industry to have completed <span class="highlight">25 years</span>.</p>
+                <p>So far more than <span class="highlight">40 lakhs students</span> are benefitted through the <span class="highlight">CSC Brand</span>. Our curriculum has been designed by the <span class="highlight">ISO 9001:2015 certified committee</span> with meticulous care, taking valuable inputs from industries, customers, and Academia.</p>
+            </div>
+        </div>
+        {% extends 'footer/footer.html' %}
+    <!-- Footer Section -->
+    <footer class="bg-blu text-white text-center p-4 mt-5">
+        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
