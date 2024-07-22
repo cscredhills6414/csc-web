@@ -1,4 +1,3 @@
-{% include 'header/header.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    {% include 'header/header.html' %}
     <div class="container mt-5">
         <div id="computerCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -119,57 +119,7 @@
             <button type="submit">Register</button>
         </form>
     </div>
-    <footer class="text-center text-lg-start bg-dark text-white mt-4">
-        <section class="container d-flex justify-content-center justify-content-lg-between p-4">
-            <div class="me-5 d-none d-lg-block">
-              <span>Get connected with us on social networks:</span>
-            </div>
-            <div>
-              <a href="#" class="me-4 text-reset"><i class="fab fa-facebook"></i></a>
-              <a href="#" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="me-4 text-reset"><i class="fab fa-google"></i></a>
-              <a href="https://www.instagram.com/csccomputerredhills?igsh=Nng4cmJodTB0dzVv" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="me-4 text-reset"><i class="fab fa-linkedin"></i></a>
-              <a href="#" class="me-4 text-reset"><i class="fab fa-github"></i></a>
-            </div>
-          </section>
-      
-        <section>
-            <div class="container text-center text-md-start mt-5">
-                <div class="row mt-3">
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <h6 class="text-uppercase fw-bold mb-4">COMPUTER SOFTWARE COLLEGE</h6>
-                        <p>No.291.G.N.T. Road Redhills, (Opp GRT Gold), Chennai-600 052.</p>
-                    </div>
-      
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <h6 class="text-uppercase fw-bold mb-4">Top News</h6>
-                        <p><a href="#!" class="text-reset">HDCA (Programming)</a></p>
-                        <p><a href="#!" class="text-reset">HDCA (Tally)</a></p>
-                        <p><a href="#!" class="text-reset">Tally Prime</a></p>
-                    </div>
-              
-                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
-                        <h6 class="text-uppercase fw-bold mb-4">Opening Hours</h6>
-                        <p><a href="#!" class="text-reset">Mon - Tues : 8.00 am - 09.00 pm</a></p>
-                        <p><a href="#!" class="text-reset">Wednes - Thurs : 8.00 am - 09.00 pm</a></p>
-                        <p><a href="#!" class="text-reset">Fri : 8.00 am - 09.00 pm</a></p>
-                        <p><a href="#!" class="text-reset">Sun : Closed</a></p>
-                    </div>
-              
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="fa fa-home me-3"></i> CSC</p>
-                        <p><i class="fa fa-envelope me-3"></i> csccomputerredhills@.com</p>
-                        <p><i class="fa fa-phone me-3"></i> +91 892596384, 7708648377</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="text-center p-4">
-            &copy; 2024 Copyright <a class="text-reset fw-bold" href="https://tutorjoes.in/">CSCREDHILLS</a>
-        </div>
-    </footer>     
+    {% extends 'footer/footer.html' %}    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
