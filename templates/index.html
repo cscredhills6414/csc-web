@@ -6,8 +6,6 @@
     <title>CSCREDHILLS</title>
     <link rel="icon" type="image/x-icon" href="../static/images/logo (1).ico">
     <link href="../static/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="static\register.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='footer.css') }}">
 </head>
 <body>
     {% include 'header/header.html' %}
@@ -86,36 +84,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div class="container">
-        <form action="/register" method="post">
-            <h2>Registration Form</h2>
-            <div class="form-group">
-                <label for="firstname">First Name:</label>
-                <input type="text" id="firstname" name="firstname" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="mobilenumber">Mobile Number:</label>
-                <input type="text" id="mobilenumber" name="mobilenumber" required>
-            </div>
-            <div class="form-group">
-                <label for="whatsappnumber">WhatsApp Number:</label>
-                <input type="text" id="whatsappnumber" name="whatsappnumber" required>
-            </div>
-            <div class="form-group">
-                <label for="role">Role:</label>
-                <select id="role" name="role" required>
-                    <option value="student">Student</option>
-                    <option value="employee">Employee</option>
-                </select>
-            </div>
-            <button type="submit">Register</button>
-        </form>
     </div>
     {% extends 'footer/footer.html' %}    
 
