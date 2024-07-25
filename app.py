@@ -10,6 +10,10 @@ def home():
 def aboutcsc():
     return render_template('pages/aboutcsc.html')
 
+@app.route('/courses')
+def courses():
+    return render_template('pages/courses.html')
+    
 @app.route("/locations")
 def locations():
     return render_template('locations/locations.html')
