@@ -1,6 +1,13 @@
-from flask import Flask, render_template
+from flask import Flask, request, render_template, redirect
+from pymongo import MongoClient
 
 app = Flask(__name__)
+
+
+# Configure MongoDB connection
+client = MongoClient("mongodb+srv://cscredhilloffical:ABpa6ZuhuRYkJjau@cluster0.oyhzhdr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+db = client["registration_db"]
+collection = db["registrations"]
 
 @app.route('/')
 def home():
@@ -33,6 +40,27 @@ def python():
 @app.route("/react")
 def react():
     return render_template('pages/react.html')
+
+@app.route('/from')
+def index():
+    return render_template('registrations.html')
+
+@app.route('/register', methods=['POST'])
+def register():
+    name = request.form['name']
+    mobile = request.form['mobile']
+    whatsapp = request.form['whatsapp']
+    status = request.form['status']
+
+    # Insert data into MongoDB
+    collection.insert_one({
+        'name': name,
+        'mobile': mobile,
+        'whatsapp': whatsapp,
+        'status': status
+    })
+
+    return redirect('/')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',port=3000)
