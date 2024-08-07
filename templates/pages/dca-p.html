@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CSCREDHILLS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .margin-right {
+      margin-right: 5px;
+    }
+
+    .margin-left {
+      margin-left: 5px;
+    }
+  </style>
+</head>
+    {% include 'header/header.html' %}
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+  <div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-6">
+          <p>
+            <br><br><img src="/static/images/images-course-dca-programming.jpg" alt="Image" width="800" height="700" class="img-fluid">
+          </p>
+
+          <p>
+            <b class="badge badge-danger">OBJECTIVE :</b>
+          </p>
+          <p class="text-justify">Upon completion of this course the participant will have a thorough knowledge in Microsoft Office suite and can create application using object oriented concept.</p>
+          <p>
+            <br><b class="badge badge-primary">TARGET AUDIENCE :</b>
+          </p>
+          <p class="text-justify">School Final / Diploma / B.Sc. / M.Sc. / BCA / MCA / Engineering Student.</p>
+          <p>
+            <br><b class="badge badge-primary">PREREQUISITES :</b>
+          </p>
+          <p class="text-justify">No prior Computer knowledge is required.
+            suite and TallyPrime.</p>
+          <p>
+            <br><b class="badge badge-primary">OVERVIEW :</b>
+          </p>
+          <p class="text-justify">This course provides the participant the knowledge of programming which is the basic requirement of any student to enter into the world of computer.</p>
+          <p>
+            <br><b class="badge badge-secondary">COURSE COVERAGE :</b>
+            <br></p>
+          <p><b class="badge badge-danger">END USER APPLICATION</b></p>
+          <p class="bg-warning text-white text-justify"><b class="bg-secondary text-white margin-right margin-left">WINDOWS</b>
+            Computer Fundamentals - Introduction to OS/GUI - Wordpad - Notepad - Paintbrush - Windows Explorer - Control Panel.
+            <b class="badge badge-primary margin-right margin-left">WORD :</b>Creating Text and Documents - Indexes and Tables - Embedding Picture - Table Manipulation - Mail Merge - Macro.
+            <b class="badge badge-primary margin-right margin-left">EXCEL :</b>Formatting Cells - Charts - Pivot table - Data Table - Forms - Scenarios - Goal seek - Macros and Modules.
+            <b class="badge badge-primary margin-right margin-left">POWERPOINT:</b> Creating Presentations - OLE - Enhancing Presentation - Adding Audio &amp; Video - Special Effects.
+            <b class="badge badge-primary margin-right margin-left">INTERNET</b> Introduction to Internet, www, http &amp; E-mail - Creating E-mail ID - Receiving &amp; Sending E-mail - Chatting - Locating Information - Downloading.
+          </p>
+        </div>
+        <div class="col-md-6 mb-8">
+          <p class="bg-info text-white text-justify"><b class="badge badge-danger mb-3">PROGRAMMING TOOL</b>
+            <br><b class="badge badge-danger">ELECTIVE - I</b>:
+            <br><b class="badge badge-primary">&ldquo;C&rdquo; LANGUAGE:</b>
+            <br>Data Types - Operators - Expressions - Conditional Compilation - Looping &amp; Branching - Arrays - Functions - Storage Classes - Structures and Unions - Pointers - Dynamic Memory Allocation - File Handling - Linked Lists - Double Linked List - Circular Linked List -Bit Manipulation -Introduction to Data Structure.
+            <b class="badge badge-primary">OOPS Using C++ :</b>
+            Introduction to OOPS -Input &amp; Output Streams - Classes &amp; Objects - Member Functions - Function Overloading - Friend Functions &amp; Classes - Operator Overloading - Constructor &amp; Destructor - Inheritance - Polymorphism - File handling using Stream Classes-Instance- Templates.
+            <b class="badge badge-warning">MINI PROJECT</b>
+            Development of System / Graphical Utility.
+            <br><b class="badge badge-danger">ELECTIVE - II</b>
+            <br><b class="badge badge-primary">PYTHON</b>
+            Introduction to Python - History - Features - Working with Python - Basic Syntax - Variable and Data Types &ndash; Operator and Expressions - Conditional Statements - If - If- else - Nested if-else &ndash; Looping &ndash; For - While - Nested loops - Control Statements - Break - Continue &ndash; Pass - String Manipulation - Accessing Strings - Basic Operations - String slices - Function and Methods &ndash; Lists - Introduction - Accessing list - Operations - Working with lists - Function and Methods &ndash; Tuple - Introduction -Accessing tuples - Operations - Working - Functions and Methods &ndash; Dictionaries - Introduction - Accessing values in dictionaries - Working with dictionaries - Properties &ndash; Functions - Defining a function - Calling a function - Types of functions - Function Arguments - Anonymous functions - Global and local variables &ndash; Modules - Importing module - Math module - Random module - Packages &ndash; Composition - Input-Output - Printing on screen - Reading data from keyboard - Opening and closing file - Reading and writing files &ndash; Functions - Exception Handling - Exception - Except clause - OOPs concept - Class and object - Attributes - Inheritance - Overloading - Overriding - Data hiding &ndash; Polymorphism &ndash; Data Structure.
+            <br><b class="badge badge-primary">ADVANCED PYTHON PROGRAMMING</b>
+            MySQL Database Access - GUI Programming (Tkinter) - Image Processing in Python with Pillow &amp; OPENCV - Web Scraping
+            <br><b class="badge badge-warning">MINI PROJECT</b> Using Python students will develop web development, data science, desktop applications, and more.</p>
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Enroll</button>
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="myModalLabel">Enrollment Form</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form id="registrationForm" action="/register" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Mobile Number</label>
+                        <input type="text" class="form-control" id="mobile" name="mobile" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="whatsapp">WhatsApp Number</label>
+                        <input type="text" class="form-control" id="whatsapp" name="whatsapp" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="status">Status</label>
+                        <select class="form-control" id="status" name="status" required>
+                            <option value="student">Student</option>
+                            <option value="employee">Employee</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </div>
+  {% extends 'footer/footer.html' %} 
+</body>
+
+</html>

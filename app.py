@@ -1,5 +1,7 @@
 from flask import Flask, request, render_template, redirect
 from pymongo import MongoClient
+from pymongo.mongo_client import MongoClient
+from pymongo.server_api import ServerApi
 
 app = Flask(__name__)
 
@@ -61,6 +63,18 @@ def register():
     })
 
     return redirect('/')
+
+#courses
+
+@app.route('/dca-p')
+def dca_p():
+    return render_template('pages/dca-p.html')
+
+@app.route('/dca-t')
+def dca_t():
+    return render_template('pages/dca-t.html')
+
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',port=3000)
